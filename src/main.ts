@@ -12,7 +12,7 @@ let counter: number = 0;
 document.body.innerHTML = `
   <h1>CMPM 121 Project</h1>
   <p>Counter: <span id="counter">0</span></p>
-  <button id="increment">Click Me!</button>
+  <button id="increment" style= "font-size: 20px; padding: 10px 15px; background-color: powderblue; color: purple; ">Click Me!</button>
 `;
 
 // Add click handler
@@ -22,4 +22,5 @@ const counterElement = document.getElementById("counter")!;
 button.addEventListener("click", () => {
   console.log("I have these thingies:", button, counterElement, counter);
   counter += 1;
+  counterElement.textContent = counter.toString();
 });

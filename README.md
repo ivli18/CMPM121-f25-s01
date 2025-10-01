@@ -1,4 +1,3 @@
-A simple project which contains:
-
+A simple project consisting of a:
 - Text Box as a counter
-- Button as an incrementer
+- Button which increments counter on click
